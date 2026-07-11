@@ -1,0 +1,107 @@
+/* ============================================
+   FLEUR — Global Styles & Design System
+   ============================================ */
+
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-bg-cream: #f5f1ee;
+  --color-bg-testimonials: #e8e2dd;
+  --color-bg-dark: #3c3c3c;
+  --color-bg-footer: #f5f1ee;
+
+  --color-text-primary: #1e1e1e;
+  --color-text-body: #888888;
+  --color-text-muted: #999999;
+  --color-text-heading: #5d4e6d;
+  --color-text-white: #ffffff;
+
+  --color-accent-gold: #c9a96e;
+  --color-accent-purple: #5d4e6d;
+  --color-accent-rose: #d4a5a5;
+
+  --color-border: #e5e5e5;
+  --color-border-dotted: #cccccc;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px;
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  /* Transitions */
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-text-body);
+  background-color: var(--color-bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-text-heading);
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-base);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input, textarea {
+  font-family: var(--font-body);
+  outline: none;
+}
+
+/* Utility Classes */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
